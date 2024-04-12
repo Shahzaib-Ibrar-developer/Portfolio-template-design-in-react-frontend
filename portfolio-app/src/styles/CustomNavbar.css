@@ -1,0 +1,140 @@
+.custom-navbar {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+
+  background-color: #292929;
+
+  position: sticky; 
+  top: 0; 
+  z-index: 1000;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+ 
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  font-size: 30px;
+  margin-right: 80%;
+}
+
+.navbar-menu li {
+  margin: 0 40px;
+  position: relative;
+}
+
+.navbar-menu li:hover {
+
+  text-decoration: underline;
+  
+}
+
+.navbar-menu li a {
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  width: auto;
+}
+.navbar-menu li a:hover {
+
+background-color: #00bcd4;
+  border-radius: 3px;
+
+  text-decoration: none;
+
+}
+.navbar-menu.active {
+  display: flex;
+}
+
+.navbar-toggle-label {
+  display: block;
+}
+
+.container-1 h1 {
+  font-size: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-left: 20px;
+  color: white;
+}
+
+.container-1 h1:hover {
+  font-weight: bolder;
+}
+
+.container-3 button {
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.container-3 button:hover {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+}
+
+
+
+/* Media query for screens with a maximum width of 1760px */
+@media (max-width: 1760px) {
+  .container-1 h1 {
+    font-size: 30px;
+  
+    margin-left: 3px;
+  
+  }
+  .navbar-menu {
+    display: none; /* Hide the navigation menu by default */
+  }
+
+  .show-menu .navbar-menu {
+    display: flex; /* Show the navigation menu when .show-menu is applied */
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Background color for the menu */
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-icon:first-child {
+    margin-top: 0;
+  }
+
+  /* Rotate the first and third lines to create the close button effect */
+  .show-menu .container-3 button .menu-icon:first-child {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .show-menu .container-3 button .menu-icon:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+  }
+
+  .show-menu .container-3 button .menu-icon:last-child {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+}

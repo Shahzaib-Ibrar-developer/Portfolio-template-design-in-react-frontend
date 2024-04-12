@@ -1,0 +1,55 @@
+.about-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  /* border-radius: 10px; */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #00bcd4; /* Highlight color */
+}
+
+.about-content {
+  margin-bottom: 30px;
+}
+.about-content p{
+  font-size: 22px;
+}
+.highlight {
+  background-image: linear-gradient(90deg, #00bcd4, #ff4081); /* Gradient highlight */
+  -webkit-background-clip: text; /* Apply the gradient as a text color */
+  color: transparent; /* Hide original text color */
+}
+
+.cta-button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4081; /* Hover color */
+}
+
+
+@media (max-width: 2200px) {
+  .about-content p{
+    font-size: 17px;
+  }
+}
+@media (max-width: 1670px) {
+  .about-content p{
+    font-size: 14px;
+  }
+}

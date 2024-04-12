@@ -1,0 +1,55 @@
+/* SkillsShowcase.css */
+
+.skills-showcase {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    width: 250px;
+    margin: 0 20px 20px;
+  }
+  
+  .skill-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    background-color: #666;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    background-color: #ff7f50; /* Adjust color as needed */
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    transition: width 0.5s ease;
+  }
+  
+  /* Skill-specific colors */
+  .frontend {
+    width: 90%; /* Adjust skill level percentage */
+  }
+  
+  .backend {
+    width: 85%; /* Adjust skill level percentage */
+  }
+  

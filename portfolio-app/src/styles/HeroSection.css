@@ -1,0 +1,134 @@
+.hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-slider {
+    display: flex;
+    width: 100%;
+    animation: slideAnimation 10s infinite; /* Adjust duration and timing as needed */
+  }
+  
+  .slide {
+    position: relative;
+    flex: 0 0 100%; /* Ensure each slide takes up the full width */
+    background-color: black;
+  }
+  
+  .slide  {
+    width: 100%;
+    height: 90vh;
+  }
+/*   
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } */
+ 
+  
+
+  .slide-text {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    /* text-align: left; */
+    color: #fff;
+  }
+  
+  .slide-text h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+
+    color: white;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .slide-text p {
+    color: white;
+font-style: italic;
+    font-size: 25px;
+  }
+
+
+  .slide-front-image{
+    position: absolute;
+    top: 0%;
+    left: 65%;
+   
+  }
+
+  .slide-front-image img{
+    /* top: 0%; */
+    width: 700px;
+    height: 100vh;
+  }
+
+  @media (max-width: 1768px) {
+    .slide-front-image img {
+        width: 500px;
+        height: auto;
+    }
+    .slide-text {
+      left: 30%;
+    }
+
+    .slide-text p {
+   
+      font-size: 20px;
+    }
+  .slide{
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1468px) {
+  .slide-front-image img {
+      width: 350px;
+      height: auto;
+  }
+
+
+  .slide-text p {
+ 
+    font-size: 15px;
+  }
+
+  .slide  {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 1050px) {
+  .slide-front-image img {
+      width: 300px;
+      height: auto;
+  }
+
+
+  .slide-text p {
+ 
+    font-size: 10px;
+  }
+
+  .slide  {
+  
+    height: 40vh;
+  }
+}
+  

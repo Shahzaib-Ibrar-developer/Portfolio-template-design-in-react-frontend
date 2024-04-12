@@ -1,0 +1,33 @@
+/* Styling for the footer component */
+
+.footer {
+
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Add some padding for spacing */
+  }
+  
+  .container {
+    width: 90%; /* Set the width of the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+  }
+  
+  .footer-links a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin-left: 10px; /* Add some spacing between links */
+  }
+  
